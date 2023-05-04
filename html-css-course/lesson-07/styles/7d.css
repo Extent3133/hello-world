@@ -1,0 +1,10 @@
+.search-box {
+  font-size: 18px;
+  padding: 10px;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px 14px;
+  width: 180px;
+}
