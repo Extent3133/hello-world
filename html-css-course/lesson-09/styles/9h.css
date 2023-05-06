@@ -1,0 +1,26 @@
+.center {
+  text-align: center;
+}
+
+.google-logo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  width: 400px;
+  padding: 10px 14px;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 0 4px gray;
+  margin-bottom: 20px;
+}
+
+.google-search-button,
+.feeling-lucky-button {
+  border: none;
+  padding: 10px 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}

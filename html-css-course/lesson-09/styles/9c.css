@@ -1,0 +1,14 @@
+.survey-wrap {
+  width: 270px;
+  padding: 20px;
+  border-width: 1px;
+  border-color: lightgray;
+  border-style: solid;
+}
+
+.survey-question,
+.yes-button,
+.no-button {
+  font-family: Roboto;
+  margin-top: 0;
+}

@@ -1,0 +1,36 @@
+.container {
+  box-shadow: 0 0 5px gray;
+  padding: 10px;
+  width: 350px;
+}
+
+.cat-avatar {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 25px;
+  vertical-align: middle;
+}
+
+.whats-happening {
+  font-size: 16px;
+  margin-left: 10px;
+  border: none;
+  vertical-align: middle;
+  width: 200px;
+  font-family: Roboto;
+}
+
+.tweet-button {
+  background-color: rgb(0, 183, 255);
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Roboto;
+  width: 76px;
+  height: 34px;
+  border-radius: 17px;
+  cursor: pointer;
+  vertical-align: middle;
+}
