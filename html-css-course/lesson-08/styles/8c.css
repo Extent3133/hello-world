@@ -1,0 +1,15 @@
+.google-logo {
+  width: 200px;
+  display: block;
+  margin: 14px auto;
+}
+
+.search-box {
+  width: 400px;
+  padding: 10px 14px;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 0 4px gray;
+  margin: auto;
+  display: block;
+}

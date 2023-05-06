@@ -1,0 +1,39 @@
+.title-text {
+  font-family: Roboto;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.pickup-box, 
+.destination-box {
+  display: block;
+  font-family: Roboto;
+  width: 340px;
+  margin-bottom: 10px;
+  padding: 16px;
+  border: none;
+  background-color: rgb(240, 240, 240);
+  border-radius: 4px;
+}
+
+.request-now-button, 
+.schedule-later-button {
+  display: inline-block;
+  font-family: Roboto;
+  width: 134px;
+  height: 40px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.request-now-button {
+  background-color: black;
+  color: white;
+}
+
+.schedule-later-button {
+  background-color: rgb(240, 240, 240);
+}
