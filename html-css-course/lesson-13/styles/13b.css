@@ -1,0 +1,29 @@
+.container {
+   display: flex;
+   height: 50px;
+}
+
+.element-one {
+   width: 100px;
+   background-color: lightpink;
+}
+
+.element-two {
+   width: 200px;
+   background-color: lightblue;
+}
+
+.row-one {
+   margin: 0;
+}
+
+.row-two-div {
+   display: flex;
+   justify-content: space-between;
+}
+
+.row-two {
+   background-color: black;
+   color: white;
+   margin: 0;
+}

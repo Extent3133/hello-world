@@ -1,0 +1,22 @@
+.container {
+   height: 50px;
+   display: flex;
+}
+
+.element-one {
+   width: 100px;
+   background-color: lightpink;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.text {
+   background-color: black;
+   color: white;
+}
+
+.element-two {
+   width: 200px;
+   background-color: lightblue;
+}
