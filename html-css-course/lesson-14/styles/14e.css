@@ -1,0 +1,56 @@
+body {
+   height: 3000px;
+   font-family: Roboto, Arial;
+}
+
+.header {
+   height: 70px;
+   position: fixed;
+   display: flex;
+   top: 0;
+   left: 0;
+   right: 0;
+   justify-content: space-between;
+}
+
+.header-left,
+.header-right {
+   display: flex;
+   margin-left: 50px;
+   margin-right: 50px;
+   align-items: center;
+}
+
+.avatar {
+   height: 50px;
+   width: 50px;
+   object-fit: cover;
+   border-radius: 25px;
+}
+
+.user-name {
+   margin-left: 14px;
+   font-weight: 700;
+}
+
+.add-friend-button {
+   height: 32px;
+   padding: 6px 10px;
+   background-color: rgb(0, 119, 255);
+   border: none;
+   color: white;
+   border-radius: 6px;
+   font-weight: 700;
+   cursor: pointer;
+}
+
+.message-button {
+   height: 32px;
+   padding: 6px 14px;
+   background-color: rgb(231, 231, 231);
+   border: none;
+   border-radius: 6px;
+   font-weight: 700;
+   margin-left: 10px;
+   cursor: pointer;
+}
