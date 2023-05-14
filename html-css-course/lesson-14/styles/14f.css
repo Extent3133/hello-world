@@ -1,0 +1,64 @@
+body {
+   height: 3000px;
+}
+
+p {
+   font-family: Roboto, Arial;
+}
+
+.users {
+   position: fixed;
+   display: block;
+   width: 60px;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   margin: 0;
+   background-color: rgb(40, 40, 40);
+}
+
+.user-1 {
+   width: 50px;
+   height: 50px;
+   object-fit: cover;
+   border-radius: 25px;
+   margin: 5px;
+   cursor: pointer;
+}
+
+.channels {
+   position: fixed;
+   width: 150px;
+   left: 60px;
+   top: 0;
+   bottom: 0;
+   background-color: rgb(59, 59, 59);
+}
+
+.channels-top {
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.info-text {
+   font-size: 14px;
+   margin-left: 20px;
+   color: rgb(221, 221, 221);
+   font-weight: 700;
+}
+
+.plus-text {
+   font-size: 14px;
+   margin-right: 20px;
+   color: rgb(179, 179, 179);
+   font-weight: 700;
+   cursor: pointer;
+}
+
+.channel {
+   color: gray;
+   margin-top: 0;
+   margin-left: 20px;
+   cursor: pointer;
+}

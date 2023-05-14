@@ -1,0 +1,8 @@
+.video-mini-player {
+   position: fixed;
+   width: 320px;
+   height: 180px;
+   background-color: gray;
+   bottom: 20px;
+   right: 20px;
+}
