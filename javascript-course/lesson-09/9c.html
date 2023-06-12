@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 9c</title>
+  </head>
+  <body>
+    <button onclick="
+      decisionElement('heads')
+    ">heads</button>
+    <button onclick="
+      decisionElement('tails')
+    ">tails</button>
+    <p class="js-decision"></p>
+
+    <script>
+      function decisionElement(decision) {
+        if (decision === 'heads') {
+          document.querySelector('.js-decision')
+            .innerHTML = `You chose: heads`
+        } else if (decision === 'tails') {
+          document.querySelector('.js-decision')
+            .innerHTML = `You chose: tails`
+        }
+      }
+    </script>
+  </body>
+</html>

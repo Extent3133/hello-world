@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 9e</title>
+  </head>
+  <body>
+    <input placeholder="Name" class="js-name-input" onkeydown="
+      handleNameKeydown(event);
+    ">
+    <button onclick="
+      returnName(name)
+    ">Submit</button>
+    <p class="js-return-name"></p>
+    <script>
+      function handleNameKeydown(event) {
+        if (event.key === 'Enter') {
+          returnName(name);
+        }
+      }
+
+      function returnName(name) {
+        const inputElement = document.querySelector('.js-name-input').value;
+        document.querySelector('.js-return-name')
+          .innerHTML = `Your name is: ${inputElement}`;
+      };
+    </script>
+  </body>
+</html>

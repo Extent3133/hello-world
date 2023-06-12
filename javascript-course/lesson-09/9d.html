@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 9d</title>
+  </head>
+  <body>
+    <input placeholder="Name" class="js-name-input">
+    <button onclick="
+      returnName(name)
+    ">Submit</button>
+    <p class="js-return-name"></p>
+    <script>
+      function returnName(name) {
+        const inputElement = document.querySelector('.js-name-input').value;
+        document.querySelector('.js-return-name')
+          .innerHTML = `Your name is: ${inputElement}`;
+      };
+    </script>
+  </body>
+</html>
