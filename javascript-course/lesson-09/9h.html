@@ -5,13 +5,15 @@
   </head>
   <body>
     <input placeholder="Type something" class="js-input" onkeyup="
-      const inputElement = document.querySelector('.js-input');
-      document.querySelector('.js-message')
-        .innerHTML = inputElement.value;
+      keyupFunction(event);
     ">
-    <p class="js-message"></p>
+    <p></p>
     <script>
-
+      function keyupFunction(event) {
+        const writtenText = document.querySelector('.js-input').value;
+        document.querySelector('p')
+          .innerHTML = writtenText;
+      };
     </script>
   </body>
 </html>

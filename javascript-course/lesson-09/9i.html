@@ -7,6 +7,11 @@
     <p>Cart Quantity</p>
 
     <button onclick="
+      document.querySelector('.js-cart-quantity')
+        .innerHTML = `Cart quantity: ${cartQuantity}`;
+    ">Show Quantity</button>
+
+    <button onclick="
       updateCartQuantity(1);
     ">Add to Cart</button>
 
@@ -40,14 +45,17 @@
 
     <button onclick="
       cartQuantity = 0;
-      displayCartQuantity();
+      alert('Cart was reset.');
+      document.querySelector('.js-cart-quantity')
+        .innerHTML = (`Cart quantity: ${cartQuantity}`);
     ">Reset Cart</button>
 
     <p class="js-cart-quantity"></p>
     <script>
       let cartQuantity = 0;
 
-      displayCartQuantity();
+      document.querySelector('.js-cart-quantity')
+        .innerHTML = (`Cart quantity: ${cartQuantity}`);
 
       function updateCartQuantity(change) {
         if (cartQuantity + change > 10) {
@@ -61,14 +69,9 @@
         } 
 
         cartQuantity += change;
-
-        displayCartQuantity();
-      }
-
-      function displayCartQuantity() {
         document.querySelector('.js-cart-quantity')
-          .innerHTML = `Cart quantity: ${cartQuantity}`
-      };
+          .innerHTML = (`Cart quantity: ${cartQuantity}`);
+      }
     </script>
   </body>
 </html>

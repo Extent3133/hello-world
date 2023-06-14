@@ -4,16 +4,16 @@
     <title>Exercise 9d</title>
   </head>
   <body>
-    <input placeholder="Name" class="js-name-input">
+    <input class="js-input" placeholder="Name">
     <button onclick="
-      returnName(name)
+      yourName();
     ">Submit</button>
-    <p class="js-return-name"></p>
+    <p></p>
     <script>
-      function returnName(name) {
-        const inputElement = document.querySelector('.js-name-input').value;
-        document.querySelector('.js-return-name')
-          .innerHTML = `Your name is: ${inputElement}`;
+      function yourName() {
+        const inputName = document.querySelector('.js-input').value;
+        document.querySelector('p')
+          .innerHTML = `Your name is: ${inputName}`
       };
     </script>
   </body>

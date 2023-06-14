@@ -5,22 +5,16 @@
   </head>
   <body>
     <button onclick="
-      decisionElement('heads')
+      headsTails('heads')
     ">heads</button>
     <button onclick="
-      decisionElement('tails')
+      headsTails('tails')
     ">tails</button>
-    <p class="js-decision"></p>
-
+    <p></p>
     <script>
-      function decisionElement(decision) {
-        if (decision === 'heads') {
-          document.querySelector('.js-decision')
-            .innerHTML = `You chose: heads`
-        } else if (decision === 'tails') {
-          document.querySelector('.js-decision')
-            .innerHTML = `You chose: tails`
-        }
+      function headsTails(decision) {
+        document.querySelector('p')
+          .innerHTML = `You chose: ${decision}`
       }
     </script>
   </body>

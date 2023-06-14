@@ -4,24 +4,24 @@
     <title>Exercise 9e</title>
   </head>
   <body>
-    <input placeholder="Name" class="js-name-input" onkeydown="
-      handleNameKeydown(event);
+    <input class="js-input" placeholder="Name" onkeydown="
+      keydownFunction(event)"
     ">
     <button onclick="
-      returnName(name)
+      yourName();
     ">Submit</button>
-    <p class="js-return-name"></p>
+    <p></p>
     <script>
-      function handleNameKeydown(event) {
-        if (event.key === 'Enter') {
-          returnName(name);
+      function keydownFunction(event) {
+        if (event.key === "Enter") {
+          yourName();
         }
-      }
+      };
 
-      function returnName(name) {
-        const inputElement = document.querySelector('.js-name-input').value;
-        document.querySelector('.js-return-name')
-          .innerHTML = `Your name is: ${inputElement}`;
+      function yourName() {
+        const inputName = document.querySelector('.js-input').value;
+        document.querySelector('p')
+          .innerHTML = `Your name is: ${inputName}`
       };
     </script>
   </body>
