@@ -1,0 +1,18 @@
+.buttons {
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 6px;
+  padding: 12px 20px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.request-now-button {
+  background-color: black;
+  color: white;
+}
+
+.schedule-for-later-button {
+  background-color: rgb(230, 230, 230);
+}

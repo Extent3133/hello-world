@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 10h</title>
+    <link rel="stylesheet" href="styles/10h.css">
+  </head>
+  <body>
+    <p class="title">YouTube Subscribe Button</p>
+    <button onclick="
+      subscribe();
+    " class="js-subscribe-button subscribe-button">
+      Subscribe
+    </button>
+
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders under $40 = +$10 shipping.</p>
+    <p>Orders over $40 = FREE shipping.</p>
+    <input placeholder="Cost of order" class="js-cost-input cost-input" onkeydown = "
+      handleCostKeydown(event);
+    ">
+    <button class="calculate-button" onclick="
+      calculateTotal();
+    ">Calculate</button>
+
+    <p class="js-total-cost"></p>
+
+    <p class="js-error-message error-message"></p>
+
+    <script src="scripts/10h.js"></script>
+  </body>
+</html>

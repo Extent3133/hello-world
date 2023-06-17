@@ -14,7 +14,7 @@ body {
 }
 
 .move-button {
-  background-color: rgb(25, 25, 25);
+  background-color: transparent;
   border: 3px solid white;
   width: 120px;
   height: 120px;
@@ -34,8 +34,8 @@ body {
 }
 
 .reset-score-button {
-  background-color: white;
   font-size: 15px;
+  background-color: white;
   border: none;
   padding: 8px 15px;
   cursor: pointer;

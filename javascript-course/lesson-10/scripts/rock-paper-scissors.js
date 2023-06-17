@@ -1,7 +1,7 @@
 let score = JSON.parse(localStorage.getItem('score')) || {
-  uzvaras: 0,
-  zaudes: 0,
-  nicas: 0
+  wins: 0,
+  losses: 0,
+  ties: 0
 };
 
 updateScoreElement();
@@ -9,9 +9,9 @@ updateScoreElement();
 /*
 if (!score) {
   score = {
-    uzvaras: 0,
-    zaudes: 0,
-    nicas: 0
+    wins: 0,
+    losses: 0,
+    ties: 0
   };
 }
 */
@@ -23,38 +23,38 @@ function playGame (playerMove) {
 
   if (playerMove === 'scissors') {
     if (computerMove === 'rock') {
-      result = 'Zaude.';
+      result = 'You lose.';
     } else if (computerMove === 'paper') {
-      result = 'Uzvara.';
+      result = 'You win.';
     } else if (computerMove === 'scissors') {
-      result = 'Niča.';
+      result = 'Tie.';
     }
 
   } else if (playerMove === 'paper') {
     if (computerMove === 'rock') {
-      result = 'Uzvara.';
+      result = 'You win.';
     } else if (computerMove === 'paper') {
-      result = 'Niča.';
+      result = 'Tie.';
     } else if (computerMove === 'scissors') {
-      result = 'Zaude.';
+      result = 'You lose.';
     }
     
   } else if (playerMove === 'rock') {
     if (computerMove === 'rock') {
-      result = 'Niča.';
+      result = 'Tie.';
     } else if (computerMove === 'paper') {
-      result = 'Zaude.';
+      result = 'You lose.';
     } else if (computerMove === 'scissors') {
-      result = 'Uzvara.';
+      result = 'You win.';
     }
   }
 
-  if (result === 'Uzvara.') {
-    score.uzvaras += 1;
-  } else if (result === 'Zaude.') {
-    score.zaudes += 1;
+  if (result === 'You win.') {
+    score.wins += 1;
+  } else if (result === 'You lose.') {
+    score.losses += 1;
   } else if (result === 'Tie.') {
-    score.nicas += 1;
+    score.ties += 1;
   }
 
   localStorage.setItem('score', JSON.stringify(score));
@@ -65,15 +65,15 @@ function playGame (playerMove) {
     .innerHTML = result;
 
   document.querySelector('.js-moves')
-    .innerHTML = `Tavs gājiens = 
-      <img src="images/${playerMove}-emoji.png" class="move-icon"> 
-      <img src="images/${computerMove}-emoji.png" class="move-icon"> =
-      Kompja gājiens`
+    .innerHTML = `You
+<img class="move-icon" src="images/${playerMove}-emoji.png">
+<img class="move-icon" src="images/${computerMove}-emoji.png">
+Computer`
 }
 
 function updateScoreElement() {
   document.querySelector('.js-score')
-    .innerHTML = `Uzvaras: ${score.uzvaras}, Zaudes: ${score.zaudes}, Ničas: ${score.nicas}`;
+    .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
 };
 
 function pickComputerMove () {
