@@ -19,6 +19,7 @@ body {
   font-size: 22px;
   color: white;
   background-color: rgb(51, 51, 51);
+  cursor: pointer;
 }
 
 .orange-button {

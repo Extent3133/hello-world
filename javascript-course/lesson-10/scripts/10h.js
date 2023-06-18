@@ -36,5 +36,5 @@ function calculateTotal() {
   };
 
   document.querySelector('.js-total-cost')
-      .innerHTML = `$${cost}`;
+    .innerHTML = `$${cost}`;
 }
